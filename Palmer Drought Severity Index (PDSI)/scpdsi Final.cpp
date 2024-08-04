@@ -6,16 +6,14 @@
 #include <direct.h>  
 // ----------------------------------------------------------------------------------------
 // ----------------------------------------------------------------------------------------
-//			UNIVERSIDAD DISTRITAL FRANCISCO JOS… DE CALDAS-BOGOT¡-COLOMBIA
-// 							AUTOR : CARLOS M…NDEZ
-// 			METODOLOGÕA DE EVALUACI”N Y PRON”STICO DEL FEN”MENO DE SEQUÕA 
-//				EN EL MUNICIPIO DE MOTAVITA, DEPARTAMENTO DE BOYAC¡
+//			UNIVERSIDAD DISTRITAL FRANCISCO JOS√â DE CALDAS-BOGOT√Å-COLOMBIA
+// 							AUTOR : CARLOS M√âNDEZ
 
 // Contacto : camendezv@correo.udistrital.edu.co
 // ----------------------------------------------------------------------------------------
 // ----------------------------------------------------------------------------------------
 
-// CrÈditos, versiones anteriores de referencia 
+// Cr√©ditos, versiones anteriores de referencia 
 // University of Nebraska - Lincoln            Jul 15 2003 
 // Rob Reed and Nate Wells
 // Tom Heddinghaus en NCEP
@@ -23,36 +21,36 @@
 // scpdsi.cpp
 // weekly_pdsi.cpp
 // ----------------------------------------------------------------------------------------
-// 					CARACTERÕSTICAS DEL PROGRAMA 
-//************** Calcula el Õndice de severidad de sequÌa de Palmer (PDSI) 
-//************** Calcula el Õndice de sequÌa hidrolÛgica de Palmer (PHDI)
-//************** Calcula el Õndice de severidad de sequÌa de Palmer modificado o ponderado(WPLM)
-//************** Calcula el Õndice Z de Palmer (ZIND)
-//************** El valor de los Ìndices se calculan en escalas de tiempo mensuales
-//************** Acepta un formato de texto con los par·metros necesarios:
-//************** Utiliza el mÈtodo de EvapotranspiraciÛn de Thornthwaite 
+// 					CARACTER√çSTICAS DEL PROGRAMA 
+//************** Calcula el √çndice de severidad de sequ√≠a de Palmer (PDSI) 
+//************** Calcula el √çndice de sequ√≠a hidrol√≥gica de Palmer (PHDI)
+//************** Calcula el √çndice de severidad de sequ√≠a de Palmer modificado o ponderado(WPLM)
+//************** Calcula el √çndice Z de Palmer (ZIND)
+//************** El valor de los √≠ndices se calculan en escalas de tiempo mensuales
+//************** Acepta un formato de texto con los par√°metros necesarios:
+//************** Utiliza el m√©todo de Evapotranspiraci√≥n de Thornthwaite 
 // ----------------------------------------------------------------------------------------
-//************** PAR¡METROS DE ENTRADA
+//************** PAR√ÅMETROS DE ENTRADA
 
-//************** VARIABLE DE PRECIPITACI”N  (unidades en milÌmetros) 
-//************** PrecipitaciÛn Total Mensual
+//************** VARIABLE DE PRECIPITACI√ìN  (unidades en mil√≠metros) 
+//************** Precipitaci√≥n Total Mensual
 //************** Nombre del archivo ------>  monthly_P
 
 //************** VARIABLE TEMETPRATURA (unidades en grados centigrados)
 //************** Temperatura Media Mensual 
 //************** Nombre del archivo ------>  monthly_T
 
-//************** VARIABLE CAPACIDAD DE ALMACENAMIENTO/RETENCI”N/APROVECHAMIENTO DE AGUA O DE H⁄MEDAD DEL SUELO (unidades de milÌmetros) 
+//************** VARIABLE CAPACIDAD DE ALMACENAMIENTO/RETENCI√ìN/APROVECHAMIENTO DE AGUA O DE H√öMEDAD DEL SUELO (unidades de mil√≠metros) 
 //************** AWC (capacidad de retencion de agua disponible ) y Latitud Norte o Sur:
 //************** Nombre del archivo ------> parameter
 
-//************** VARIABLE EVAPOTRANSPIRACI”N POTENCIAL(unidades de milÌmetros)
-//************** EVAPOTRANSPIRACI”N POTENCIAL ajustada o corregida con los valores de latitud, Horas de sol y Temperatura
+//************** VARIABLE EVAPOTRANSPIRACI√ìN POTENCIAL(unidades de mil√≠metros)
+//************** EVAPOTRANSPIRACI√ìN POTENCIAL ajustada o corregida con los valores de latitud, Horas de sol y Temperatura
 //************** Nombre del archivo ------> monthly_ETP
 
 
-// Se modificÛ el mÈtodo de calibraciÛn para calibrar la caracterÌstica clim·tica seg˙n
-// en los cuartiles en lugar del m·ximo y mÌnimo
+// Se modific√≥ el m√©todo de calibraci√≥n para calibrar la caracter√≠stica clim√°tica seg√∫n
+// en los cuartiles en lugar del m√°ximo y m√≠nimo
 // ------------------------------------------------ -----------------------------
 // ------ Archivos de salida:
 //
@@ -60,17 +58,17 @@
 // los archivos de salida de la columna terminan en .clm. 
 //
 // PDSI.tbl y / o PDSI.clm:
-//   Los valores del Ìndice de severidad de la sequÌa de Palmer
+//   Los valores del √≠ndice de severidad de la sequ√≠a de Palmer
 //
 // PHDI.tbl y / o PHDI.clm:
-//   Valores del Ìndice de sequÌa hidrolÛgica de Palmer.
+//   Valores del √≠ndice de sequ√≠a hidrol√≥gica de Palmer.
 //
 // WPLM.tbl y / o WPLM.clm:
-//   El Ìndice de Palmer "ponderado". Un promedio de X1 y X3, o X1 y X2
+//   El √≠ndice de Palmer "ponderado". Un promedio de X1 y X3, o X1 y X2
 //   ponderado por la probabilidad de que finalice el hechizo actual. 
 // 
 // ZIND.tbl y / o ZIND.clm:
-//   El Ìndice Z, o la anomalÌa de la humedad
+//   El √≠ndice Z, o la anomal√≠a de la humedad
 //
 // WB.tbl
 //   Los coeficientes de balance de agua (Alfa, Beta, Gamma y Delta) para cada
@@ -85,10 +83,10 @@
 // dvalue
 // La salida de humedad, d, para cada mes.
 //
-// Esto define el n˙mero de tipo como doble. Esto se usa para cambiar f·cilmente
+// Esto define el n√∫mero de tipo como doble. Esto se usa para cambiar f√°cilmente
 // los tipos de variables del PDSI.
 
-// Esto define el n˙mero de tipo como doble. Esto se usa para cambiar f·cilmente
+// Esto define el n√∫mero de tipo como doble. Esto se usa para cambiar f√°cilmente
 // los tipos de variables del PDSI.
 
 typedef double number;
