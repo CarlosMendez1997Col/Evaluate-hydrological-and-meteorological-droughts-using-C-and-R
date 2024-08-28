@@ -1,4 +1,4 @@
-# Grapichs of drought index
+# Animations and timeline of hydrological data
 
 ## Animations and timeline drought index
 
