@@ -1,1 +1,1 @@
-Graphics
+# Grapichs of drought index
