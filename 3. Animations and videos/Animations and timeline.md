@@ -1,21 +1,12 @@
 # Animations and timeline of hydrological data
 
-Multitemporal images between 2001 and 2023 of the hydrological variables precipitation and potential evapotranspiration, using the Inverse Distance Weighted (IDW) geostatistical interpolator.
+Forecast SPEI index, using the Inverse Distance Weighted (IDW) geostatistical interpolator.
 
-## Precipitation
+## SPEI three-monthly index (3)
 
-[![Watch the video](https://img.youtube.com/vi/oQujtrsj8L4/0.jpg)](https://www.youtube.com/watch?v=oQujtrsj8L4)
+https://github.com/user-attachments/assets/aec52a9b-492c-46dd-8237-bec20f9ff4c4
 
-## Potential evapotranspiration 
+## SPEI six-monthly index (6)
 
-[![Watch the video](https://img.youtube.com/vi/HKp7Oi2KrV0/0.jpg)](https://www.youtube.com/watch?v=HKp7Oi2KrV0)
-
-##  SPEI and SPI index
-[![Watch the video](https://img.youtube.com/vi/cDmxMZ2AEfQ/0.jpg)](https://www.youtube.com/watch?v=cDmxMZ2AEfQ)
-
-## Projection of precipitation, potential evapotranspiration and SPEI index
-
-Projection of precipitation, potential evapotranspiration and SPEI index between 2023 and 2025.
-
-[![Watch the video](https://img.youtube.com/vi/gVYI6FJBzo8/0.jpg)](https://www.youtube.com/watch?v=gVYI6FJBzo8)
+https://github.com/user-attachments/assets/0aa42995-f9c1-49fd-af14-ea5531bf6bde
 
