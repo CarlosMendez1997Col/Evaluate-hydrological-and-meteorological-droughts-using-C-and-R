@@ -60,7 +60,7 @@ The SPI and SPEI index, were used with the CRAN package `SPEI Version: 1.8.1` in
 The PDSI index, was modified following the original code, available at: [GitHub Repository](https://github.com/cszang/pdsi/blob/master/exec/scpdsi.cpp) 
 ## Conflict of Interest.
 
-The authors declare that there is no conflict of interest in the publication of this map and that all authors have approved it for publication.
+The author declare that there is no conflict of interest in the publication of this data annd have approved it for publication.
 
 ## Contributing
 
