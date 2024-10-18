@@ -1,4 +1,4 @@
-# Drought Index (SPI, SPEI and PDSI)
+# Evaluation and analysis of drought using the SPI, SPEI and PDSI index
 
 ## Description
 
