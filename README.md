@@ -70,7 +70,7 @@ library(dplyr)
 Version `1.0`
 
 ```HTML
-https://github.com/CarlosMendez1997Col/Evaluate-hydrological-and-meteorological-droughts-using-C-and-R/commits/Version1.0
+https://github.com/CarlosMendez1997Col/Evaluate-hydrological-and-meteorological-droughts-using-C-and-R/releases
 ```
 
 ## Data acquisition and download
