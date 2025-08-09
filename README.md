@@ -1,5 +1,17 @@
 # Evaluation and analysis of drought using the SPI, SPEI and PDSI index
 
+## Use and install this repository
+
+HTTPS
+```CSS
+https://github.com/CarlosMendez1997Col/Evaluate-hydrological-and-meteorological-droughts-using-C-and-R.git
+```
+
+GitHub CLI
+```CSS
+gh repo clone CarlosMendez1997Col/Evaluate-hydrological-and-meteorological-droughts-using-C-and-R
+```
+
 ## Description
 
 Repository builded in `C++` and `R` languages programs. 
